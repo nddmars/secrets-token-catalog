@@ -1,0 +1,27 @@
+# Rule Catalog Sheet (The Definitive Library)
+# Each entry corresponds to the schema provided by the user.
+
+# Rule Catalog Sheet (The Definitive Library)
+# Each entry corresponds to the schema provided by the user.
+
+- token_id: "AWS-001"
+  token_name: "AWS Access Key ID"
+  detection_category: "Cloud/AWS"
+  regex_pattern: 'AKIA[0-9A-Z]{16}'
+  keywords_prefixes:
+    - AKIA
+  minimum_entropy: 3.0
+  token_length: 20
+  default_severity: "High"
+  rule_status: "Active"
+
+- token_id: "GENERIC-BASE64-01"
+  token_name: "Generic high-entropy token"
+  detection_category: "Generic"
+  regex_pattern: |-
+    (?P<quote>['"])?(?P<val>[A-Za-z0-9_\-]{20,})\1
+  keywords_prefixes: []
+  minimum_entropy: 3.5
+  token_length: 20
+  default_severity: "Medium"
+  rule_status: "Active"

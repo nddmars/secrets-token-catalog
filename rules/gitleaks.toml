@@ -1,0 +1,13 @@
+title = "Example gitleaks rules for research"
+
+[[rules]]
+  id = "example-api-token"
+  description = "API tokens in assignment"
+  regex = '''(?i)(?:api[-_]?key|api[-_]?token|token)\s*[:=]\s*["']?[A-Za-z0-9\-_.]{20,}["']?'''
+  tags = ["key", "api"]
+
+[[rules]]
+  id = "example-aws-access"
+  description = "AWS access key" 
+  regex = '''AKIA[0-9A-Z]{16}'''
+  tags = ["aws"]

@@ -1,0 +1,16 @@
+# Rules Operations Process Sheet (Performance & Tuning)
+- detection_rule_id: "AWS-001"
+  test_audit_sample_size: 100
+  true_positives: 90
+  false_positives: 10
+  false_negatives: 5
+  last_audit_date: "2025-10-01"
+  tuning_recommendation: "Refine regex to reduce FP; consider adding contextual keyword checks"
+
+- detection_rule_id: "GENERIC-BASE64-01"
+  test_audit_sample_size: 200
+  true_positives: 120
+  false_positives: 80
+  false_negatives: 10
+  last_audit_date: "2025-09-28"
+  tuning_recommendation: "Increase entropy threshold to reduce false positives"

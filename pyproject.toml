@@ -1,0 +1,8 @@
+[project]
+name = "secrets-token-catalog"
+version = "0.1.0"
+description = "Canonical token/rule catalog and tuning harness for secrets detection"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

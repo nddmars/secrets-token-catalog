@@ -1,0 +1,16 @@
+{
+  "rules": [
+    {
+      "id": "example_api_key",
+      "description": "API key assignment",
+      "regex": "(?i)(?:api[-_]?key|api[-_]?token|token)\\s*[:=]\\s*[\\\"']?[A-Za-z0-9\\-_.]{20,}[\\\"']?",
+      "tags": ["api","secret"]
+    },
+    {
+      "id": "aws_access",
+      "description": "AWS access key",
+      "regex": "AKIA[0-9A-Z]{16}",
+      "tags": ["aws"]
+    }
+  ]
+}
