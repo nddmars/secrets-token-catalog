@@ -8,6 +8,8 @@ Fields include:
 - true_positives
 - false_positives
 - false_negatives
+- Recall
+- Precision
 - last_audit_date
 - tuning_recommendation
 
